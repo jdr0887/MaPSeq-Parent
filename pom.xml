@@ -20,7 +20,6 @@
     <maven.release.plugin.version>2.4.1</maven.release.plugin.version>
     <maven.surefire.plugin.version>2.9</maven.surefire.plugin.version>
     <maven.site.plugin.version>3.2</maven.site.plugin.version>
-    <slf4j.version>1.7.2</slf4j.version>
     <commons.discovery.version>0.5</commons.discovery.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.beanutils.version>1.8.3</commons.beanutils.version>
@@ -29,6 +28,8 @@
     <commons.collections.version>3.2.1</commons.collections.version>
     <commons.cli.version>1.2</commons.cli.version>
     <commons.pool.version>1.5.6</commons.pool.version>
+    <slf4j.version>1.7.2</slf4j.version>
+    <openjpa.version>2.2.1</openjpa.version>
   </properties>
   <organization>
     <name>UNC</name>
@@ -79,7 +80,7 @@
 	<updatePolicy>never</updatePolicy>
       </snapshots>
     </repository>
-   <repository>
+    <repository>
       <id>biojava-maven-repo</id>
       <name>BioJava repository</name>
       <url>http://www.biojava.org/download/maven</url>			
@@ -143,6 +144,11 @@
   </distributionManagement>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+      	<groupId>org.apache.openjpa</groupId>
+      	<artifactId>openjpa</artifactId>
+      	<version>${openjpa.version}</version>
+      </dependency>
       <dependency>
       	<groupId>commons-beanutils</groupId>
       	<artifactId>commons-beanutils</artifactId>
