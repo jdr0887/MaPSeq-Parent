@@ -31,7 +31,7 @@
     <commons.cli.version>1.2</commons.cli.version>
     <commons.pool.version>1.5.6</commons.pool.version>
     <slf4j.version>1.7.2</slf4j.version>
-    <openjpa.version>2.2.1</openjpa.version>
+    <openjpa.version>2.2.2</openjpa.version>
   </properties>
   <organization>
     <name>UNC</name>
