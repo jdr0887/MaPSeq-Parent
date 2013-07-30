@@ -15,7 +15,7 @@
     <maven.surefire.report.plugin.version>2.15</maven.surefire.report.plugin.version>
     <maven.checkstyle.plugin.version>2.10</maven.checkstyle.plugin.version>
     <maven.changelog.plugin.version>2.2</maven.changelog.plugin.version>
-    <maven.bundle.plugin.version>2.3.6</maven.bundle.plugin.version>
+    <maven.bundle.plugin.version>2.4.0</maven.bundle.plugin.version>
     <maven.eclipse.plugin.version>2.9</maven.eclipse.plugin.version>
     <maven.release.plugin.version>2.4.1</maven.release.plugin.version>
     <maven.resources.plugin.version>2.6</maven.resources.plugin.version>
@@ -66,8 +66,13 @@
   </pluginRepositories>
   <repositories>
     <repository> 
+      <id>com.springsource.repository.bundles.release</id> 
+      <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name> 
+      <url>http://repository.springsource.com/maven/bundles/release</url> 
+    </repository> 
+    <repository> 
       <id>com.springsource.repository.bundles.external</id> 
-      <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle External</name> 
+      <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name> 
       <url>http://repository.springsource.com/maven/bundles/external</url> 
     </repository>
     <repository>
