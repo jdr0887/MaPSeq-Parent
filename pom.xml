@@ -136,14 +136,12 @@
     <repository>
       <id>renci.repository</id>
       <name>renci.repository</name>
-      <url>http://152.54.9.238:8080/repository/internal</url>
-      <!-- <url>https://ci-dev.renci.org/nexus/content/repositories/releases</url> -->
+      <url>http://archiva.renci.org:8080/repository/internal</url>
     </repository>
     <snapshotRepository>
       <id>renci.repository</id>
       <name>renci.repository</name>
-      <url>http://152.54.9.238:8080/repository/snapshots</url>
-      <!-- <url>https://ci-dev.renci.org/nexus/content/repositories/snapshots</url> -->
+      <url>http://archiva.renci.org:8080/repository/snapshots</url>
     </snapshotRepository>
     <site>
       <id>renci.site</id>
