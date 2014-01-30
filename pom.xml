@@ -8,19 +8,19 @@
   <url>https://ci-dev.renci.org/site/mapseq</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.project.info.reports.plugin.version>2.6</maven.project.info.reports.plugin.version>
+    <maven.project.info.reports.plugin.version>2.7</maven.project.info.reports.plugin.version>
     <maven.javadoc.plugin.version>2.9.1</maven.javadoc.plugin.version>
     <maven.jxr.plugin.version>2.3</maven.jxr.plugin.version>
     <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
-    <maven.surefire.report.plugin.version>2.15</maven.surefire.report.plugin.version>
-    <maven.checkstyle.plugin.version>2.10</maven.checkstyle.plugin.version>
+    <maven.surefire.report.plugin.version>2.16</maven.surefire.report.plugin.version>
+    <maven.checkstyle.plugin.version>2.11</maven.checkstyle.plugin.version>
     <maven.changelog.plugin.version>2.2</maven.changelog.plugin.version>
     <maven.bundle.plugin.version>2.4.0</maven.bundle.plugin.version>
     <maven.eclipse.plugin.version>2.9</maven.eclipse.plugin.version>
-    <maven.release.plugin.version>2.4.1</maven.release.plugin.version>
+    <maven.release.plugin.version>2.4.2</maven.release.plugin.version>
     <maven.resources.plugin.version>2.6</maven.resources.plugin.version>
     <maven.war.plugin.version>2.4</maven.war.plugin.version>
-    <maven.surefire.plugin.version>2.15</maven.surefire.plugin.version>
+    <maven.surefire.plugin.version>2.16</maven.surefire.plugin.version>
     <maven.site.plugin.version>3.3</maven.site.plugin.version>
     <commons.discovery.version>0.5</commons.discovery.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
@@ -103,7 +103,7 @@
     <repository>
       <id>renci.repository</id>
       <name>renci.repository</name>
-      <url>http://ci-dev.renci.org/nexus/content/repositories/public</url>
+      <url>http://152.54.9.238:8080/repository/internal</url>
       <releases>
     	<enabled>true</enabled>
     	<updatePolicy>always</updatePolicy>
@@ -136,12 +136,14 @@
     <repository>
       <id>renci.repository</id>
       <name>renci.repository</name>
-      <url>https://ci-dev.renci.org/nexus/content/repositories/releases</url>
+      <url>http://152.54.9.238:8080/repository/internal</url>
+      <!-- <url>https://ci-dev.renci.org/nexus/content/repositories/releases</url> -->
     </repository>
     <snapshotRepository>
       <id>renci.repository</id>
       <name>renci.repository</name>
-      <url>https://ci-dev.renci.org/nexus/content/repositories/snapshots</url>
+      <url>http://152.54.9.238:8080/repository/snapshots</url>
+      <!-- <url>https://ci-dev.renci.org/nexus/content/repositories/snapshots</url> -->
     </snapshotRepository>
     <site>
       <id>renci.site</id>
