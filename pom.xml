@@ -53,7 +53,7 @@
     <pluginRepository>
       <id>renci.plugin.repository</id>
       <name>RENCI Plugin Repository</name>
-      <url>http://ci-dev.renci.org/nexus/content/repositories/public</url>
+      <url>http://archiva.renci.org:8080/repository/internal</url>
       <layout>default</layout>
       <snapshots>
         <enabled>true</enabled>
@@ -103,7 +103,7 @@
     <repository>
       <id>renci.repository</id>
       <name>renci.repository</name>
-      <url>http://152.54.9.238:8080/repository/internal</url>
+      <url>http://archiva.renci.org:8080/repository/internal</url>
       <releases>
     	<enabled>true</enabled>
     	<updatePolicy>always</updatePolicy>
