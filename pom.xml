@@ -61,7 +61,6 @@
       </snapshots>
       <releases>
         <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
       </releases>
     </pluginRepository>
   </pluginRepositories>
@@ -72,11 +71,20 @@
       <url>http://archiva.renci.org:8080/repository/internal</url>
       <releases>
     	<enabled>true</enabled>
-    	<updatePolicy>always</updatePolicy>
+      </releases>
+      <snapshots>
+    	<enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>renci.snapshot.repository</id>
+      <name>renci.repository</name>
+      <url>http://archiva.renci.org:8080/repository/snapshots</url>
+      <releases>
+    	<enabled>false</enabled>
       </releases>
       <snapshots>
     	<enabled>true</enabled>
-    	<updatePolicy>never</updatePolicy>
       </snapshots>
     </repository>
   </repositories>
