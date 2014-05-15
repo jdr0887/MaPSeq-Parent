@@ -10,17 +10,17 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.project.info.reports.plugin.version>2.7</maven.project.info.reports.plugin.version>
     <maven.javadoc.plugin.version>2.9.1</maven.javadoc.plugin.version>
-    <maven.jxr.plugin.version>2.3</maven.jxr.plugin.version>
+    <maven.jxr.plugin.version>2.4</maven.jxr.plugin.version>
     <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
-    <maven.surefire.report.plugin.version>2.16</maven.surefire.report.plugin.version>
-    <maven.checkstyle.plugin.version>2.11</maven.checkstyle.plugin.version>
+    <maven.surefire.report.plugin.version>2.17</maven.surefire.report.plugin.version>
+    <maven.checkstyle.plugin.version>2.12</maven.checkstyle.plugin.version>
     <maven.changelog.plugin.version>2.2</maven.changelog.plugin.version>
     <maven.bundle.plugin.version>2.4.0</maven.bundle.plugin.version>
     <maven.eclipse.plugin.version>2.9</maven.eclipse.plugin.version>
-    <maven.release.plugin.version>2.4.2</maven.release.plugin.version>
+    <maven.release.plugin.version>2.5</maven.release.plugin.version>
     <maven.resources.plugin.version>2.6</maven.resources.plugin.version>
     <maven.war.plugin.version>2.4</maven.war.plugin.version>
-    <maven.surefire.plugin.version>2.16</maven.surefire.plugin.version>
+    <maven.surefire.plugin.version>2.17</maven.surefire.plugin.version>
     <maven.site.plugin.version>3.3</maven.site.plugin.version>
     <commons.discovery.version>0.5</commons.discovery.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
@@ -32,7 +32,7 @@
     <commons.pool.version>1.5.6</commons.pool.version>
     <renci.commons.version>0.2.0</renci.commons.version>
     <slf4j.version>1.7.2</slf4j.version>
-    <openjpa.version>2.2.2</openjpa.version>
+    <openjpa.version>2.3.0</openjpa.version>
   </properties>
   <organization>
     <name>UNC</name>
