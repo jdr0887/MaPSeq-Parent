@@ -158,6 +158,26 @@
   <build>
     <plugins>
       <plugin>
+	<groupId>org.apache.felix</groupId>
+	<artifactId>maven-bundle-plugin</artifactId>
+	<version>${maven.bundle.plugin.version}</version>
+	<extensions>true</extensions>
+	<inherited>true</inherited>
+	<configuration>
+	  <instructions>
+	    <Bundle-Name>${project.name}</Bundle-Name>
+	    <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+	    <Implementation-Title>${project.name}</Implementation-Title>
+	    <Implementation-Version>${project.version}</Implementation-Version>
+	    <Bundle-Vendor>UNC</Bundle-Vendor>
+	    <Include-Resource>{maven-resources}</Include-Resource>
+	    <_versionpolicy>[$(version;==;$(@)),$(version;+;$(@)))</_versionpolicy>
+	    <_removeheaders>Ignore-Package,Include-Resource,Private-Package,Bundle-DocURL</_removeheaders>
+	    <_failok>false</_failok>
+	  </instructions>
+	</configuration>
+      </plugin>
+      <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-eclipse-plugin</artifactId>
 	<version>${maven.eclipse.plugin.version}</version>
