@@ -165,5 +165,6 @@
 	  <skip>false</skip>
 	</configuration>
       </plugin>
+    </plugins>
   </build>
 </project>
