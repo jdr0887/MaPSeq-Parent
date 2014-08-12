@@ -28,7 +28,7 @@
     <karaf.version>2.3.6</karaf.version>
     <cxf.version>2.7.12</cxf.version>
     <activemq.version>5.10.0</activemq.version>
-    <jackson.version>2.3.0</jackson.version>
+    <jackson.version>2.4.1</jackson.version>
   </properties>
   <licenses>
     <license>
