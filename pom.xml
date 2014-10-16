@@ -26,7 +26,7 @@
     <openjpa.version>2.3.0</openjpa.version>
     <jaxb.version>2.2.7</jaxb.version>
     <karaf.version>3.0.1</karaf.version>
-    <cxf.version>2.7.12</cxf.version>
+    <cxf.version>3.0.1</cxf.version>
     <activemq.version>5.10.0</activemq.version>
     <jackson.version>2.4.1</jackson.version>
   </properties>
