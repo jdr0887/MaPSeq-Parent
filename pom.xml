@@ -21,12 +21,12 @@
     <commons.cli.version>1.2</commons.cli.version>
     <commons.pool.version>1.5.6</commons.pool.version>
     <renci.commons.version>0.2.0</renci.commons.version>
-    <renci.jlrm.version>0.4.3</renci.jlrm.version>
+    <renci.jlrm.version>0.4.4</renci.jlrm.version>
     <slf4j.version>1.7.7</slf4j.version>
     <openjpa.version>2.3.0</openjpa.version>
     <jaxb.version>2.2.7</jaxb.version>
-    <karaf.version>3.0.1</karaf.version>
-    <cxf.version>3.0.1</cxf.version>
+    <karaf.version>3.0.2</karaf.version>
+    <cxf.version>3.0.2</cxf.version>
     <activemq.version>5.10.0</activemq.version>
     <jackson.version>2.4.1</jackson.version>
   </properties>
