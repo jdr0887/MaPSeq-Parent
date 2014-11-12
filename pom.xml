@@ -10,7 +10,7 @@
   <artifactId>mapseq</artifactId>
   <version>0.1.7-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <url>https://ci-dev.renci.org/site/mapseq</url>
+  <url>https://github.com/jdr0887/MaPSeq-Parent</url>
   <properties>
     <commons.discovery.version>0.5</commons.discovery.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
@@ -38,9 +38,9 @@
     </license>
   </licenses>
   <scm>
-    <developerConnection>scm:git:ssh://${user.name}@code.renci.org/gitroot/mps_mvn_parent</developerConnection>
-    <connection>scm:git:ssh://developername@code.renci.org/gitroot/mps_mvn_parent</connection>
-    <tag>HEAD</tag>
+    <url>https://github.com/jdr0887/MaPSeq-Parent</url>
+    <developerConnection>scm:git:git@github.com:jdr0887/MaPSeq-Parent.git</developerConnection>
+    <connection>scm:git:git@github.com:jdr0887/MaPSeq-Parent.git</connection>
   </scm>
   <developers>
     <developer>
