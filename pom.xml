@@ -17,18 +17,22 @@
     <commons.beanutils.version>1.8.3</commons.beanutils.version>
     <commons.io.version>2.4</commons.io.version>
     <commons.lang.version>2.4</commons.lang.version>
+    <commons.lang3.version>3.4</commons.lang3.version>
     <commons.collections.version>3.2.1</commons.collections.version>
     <commons.collections4.version>4.1</commons.collections4.version>
     <commons.cli.version>1.2</commons.cli.version>
     <commons.pool.version>1.5.6</commons.pool.version>
+    <commons.net.version>3.3</commons.net.version>
+    <commons.math.version>3.5</commons.math.version>    
     <renci.commons.version>0.2.0</renci.commons.version>
     <renci.jlrm.version>0.4.6</renci.jlrm.version>
     <slf4j.version>1.7.12</slf4j.version>
     <openjpa.version>2.4.0</openjpa.version>
     <karaf.version>4.0.4</karaf.version>
     <cxf.version>3.1.4</cxf.version>
-    <activemq.version>5.10.1</activemq.version>
+    <activemq.version>5.13.1</activemq.version>
     <jackson.version>2.4.1</jackson.version>
+    <postgresql.version>9.4-1206-jdbc42</postgresql.version>    
   </properties>
   <licenses>
     <license>
@@ -131,7 +135,7 @@
       <dependency>
       	<groupId>org.apache.maven</groupId>
       	<artifactId>maven-plugin-api</artifactId>
-      	<version>2.2.1</version>
+      	<version>3.3.9</version>
       </dependency>
       <dependency>
       	<groupId>org.apache.maven</groupId>
