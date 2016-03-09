@@ -2,7 +2,7 @@
   <parent>
     <groupId>edu.unc</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
   </parent>
   <name>Massively Parallel Sequencing Parent</name>
   <modelVersion>4.0.0</modelVersion>
@@ -17,6 +17,7 @@
     <commons.beanutils.version>1.8.3</commons.beanutils.version>
     <commons.io.version>2.4</commons.io.version>
     <commons.lang.version>2.4</commons.lang.version>
+    <commons.exec.version>1.3</commons.exec.version>
     <commons.lang3.version>3.4</commons.lang3.version>
     <commons.collections.version>3.2.1</commons.collections.version>
     <commons.collections4.version>4.1</commons.collections4.version>
@@ -97,6 +98,11 @@
       	<artifactId>commons-lang</artifactId>
       	<version>${commons.lang.version}</version>
       </dependency>
+      <dependency>
+      	<groupId>org.apache.commons</groupId>
+      	<artifactId>commons-exec</artifactId>
+      	<version>${commons.exec.version}</version>
+      </dependency>      
       <dependency>
       	<groupId>org.apache.commons</groupId>
       	<artifactId>commons-collections4</artifactId>
