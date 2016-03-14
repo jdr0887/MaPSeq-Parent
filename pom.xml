@@ -24,7 +24,8 @@
     <commons.cli.version>1.2</commons.cli.version>
     <commons.pool.version>1.5.6</commons.pool.version>
     <commons.net.version>3.3</commons.net.version>
-    <commons.math.version>3.5</commons.math.version>    
+    <commons.math.version>3.5</commons.math.version>
+    <commons.httpclient.version>3.1</commons.httpclient.version>        
     <renci.commons.version>0.2.3</renci.commons.version>
     <renci.jlrm.version>0.4.8</renci.jlrm.version>
     <slf4j.version>1.7.12</slf4j.version>
@@ -33,7 +34,8 @@
     <cxf.version>3.1.4</cxf.version>
     <activemq.version>5.13.1</activemq.version>
     <jackson.version>2.4.1</jackson.version>
-    <postgresql.version>9.4-1206-jdbc42</postgresql.version>    
+    <postgresql.version>9.4-1206-jdbc42</postgresql.version>
+    <osgi.version>5.0.0</osgi.version>
   </properties>
   <licenses>
     <license>
@@ -68,6 +70,47 @@
   </developers>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+      	<groupId>org.postgresql</groupId>
+      	<artifactId>postgresql</artifactId>
+      	<version>${postgresql.version}</version>
+      </dependency>      
+      <dependency>
+	<groupId>javax.ws.rs</groupId>
+	<artifactId>javax.ws.rs-api</artifactId>      
+	<version>2.0.1</version>
+      </dependency>      
+      <dependency>
+	<groupId>javax.interceptor</groupId>
+      	<artifactId>javax.interceptor-api</artifactId>
+      	<version>1.2</version>	
+      </dependency>
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+      </dependency>
+      <dependency>
+	<groupId>javax.transaction</groupId>
+	<artifactId>javax.transaction-api</artifactId>
+	<version>1.2</version>
+      </dependency>            
+      <dependency>
+	<groupId>commons-httpclient</groupId>
+	<artifactId>commons-httpclient</artifactId>
+	<version>3.1</version>
+      </dependency>      
+      <dependency>
+      	<groupId>org.osgi</groupId>
+      	<artifactId>org.osgi.compendium</artifactId>
+      	<version>${osgi.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.osgi</groupId>
+      	<artifactId>org.osgi.core</artifactId>
+      	<version>${osgi.version}</version>
+      	<scope>provided</scope>
+      </dependency>      
       <dependency>
 	<groupId>javax.mail</groupId>
 	<artifactId>mail</artifactId>
