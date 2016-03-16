@@ -27,7 +27,7 @@
     <commons.math.version>3.5</commons.math.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>        
     <renci.commons.version>0.2.3</renci.commons.version>
-    <renci.jlrm.version>0.4.8</renci.jlrm.version>
+    <renci.jlrm.version>0.4.9</renci.jlrm.version>
     <slf4j.version>1.7.12</slf4j.version>
     <openjpa.version>2.4.0</openjpa.version>
     <karaf.version>4.0.3</karaf.version>
@@ -313,6 +313,41 @@
 	  <skip>false</skip>
 	</configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>${maven.site.plugin.version}</version>
+        <configuration>
+	  <reportPlugins>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-project-info-reports-plugin</artifactId>
+	      <version>${maven.project.info.reports.plugin.version}</version>
+	      <configuration>
+		<dependencyDetailsEnabled>true</dependencyDetailsEnabled>
+		<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+	      </configuration>
+	      <reports>
+	      </reports>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-javadoc-plugin</artifactId>
+	      <version>${maven.javadoc.plugin.version}</version>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-surefire-report-plugin</artifactId>
+	      <version>${maven.surefire.report.plugin.version}</version>
+	    </plugin>
+	    <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-changelog-plugin</artifactId>
+	      <version>${maven.changelog.plugin.version}</version>
+	    </plugin>
+	  </reportPlugins>
+        </configuration>
+      </plugin>      
     </plugins>
   </build>
 </project>
