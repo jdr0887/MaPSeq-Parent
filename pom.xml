@@ -32,8 +32,8 @@
     <openjpa.version>2.4.0</openjpa.version>
     <karaf.version>4.0.3</karaf.version>
     <cxf.version>3.1.6</cxf.version>
-    <activemq.version>5.13.1</activemq.version>
-    <jackson.version>2.6.3</jackson.version>
+    <activemq.version>5.13.3</activemq.version>
+    <jackson.version>2.6.6</jackson.version>
     <postgresql.version>9.4-1206-jdbc42</postgresql.version>
     <osgi.version>5.0.0</osgi.version>
   </properties>
