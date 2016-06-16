@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.unc.mapseq</groupId>
   <artifactId>mapseq</artifactId>
-  <version>0.1.26-SNAPSHOT</version>
+  <version>0.1.26</version>
   <packaging>pom</packaging>
   <url>https://github.com/jdr0887/MaPSeq-Parent</url>
   <properties>
@@ -48,7 +48,7 @@
     <url>https://github.com/jdr0887/MaPSeq-Parent</url>
     <developerConnection>scm:git:git@github.com:jdr0887/MaPSeq-Parent.git</developerConnection>
     <connection>scm:git:git@github.com:jdr0887/MaPSeq-Parent.git</connection>
-    <tag>HEAD</tag>
+    <tag>mapseq-0.1.26</tag>
   </scm>
   <developers>
     <developer>
