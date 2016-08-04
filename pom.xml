@@ -28,7 +28,7 @@
     <commons.httpclient.version>3.1</commons.httpclient.version>
     <commons.csv.version>1.4</commons.csv.version>            
     <renci.commons.version>0.2.3</renci.commons.version>
-    <renci.jlrm.version>0.4.13</renci.jlrm.version>
+    <renci.jlrm.version>0.4.14</renci.jlrm.version>
     <slf4j.version>1.7.12</slf4j.version>
     <openjpa.version>2.4.0</openjpa.version>
     <karaf.version>4.0.3</karaf.version>
