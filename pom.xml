@@ -24,7 +24,8 @@
     <commons.cli.version>1.2</commons.cli.version>
     <commons.pool.version>1.5.6</commons.pool.version>
     <commons.net.version>3.3</commons.net.version>
-    <commons.math.version>3.5</commons.math.version>
+    <commons.math.version>2.2</commons.math.version>
+    <commons.math3.version>3.5</commons.math3.version>
     <commons.httpclient.version>3.1</commons.httpclient.version>
     <commons.csv.version>1.4</commons.csv.version>            
     <renci.commons.version>0.2.3</renci.commons.version>
@@ -37,6 +38,7 @@
     <jackson.version>2.6.6</jackson.version>
     <postgresql.version>9.4-1206-jdbc42</postgresql.version>
     <osgi.version>5.0.0</osgi.version>
+    <spring.version>4.2.3.RELEASE</spring.version>
   </properties>
   <licenses>
     <license>
@@ -72,9 +74,39 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-math</artifactId>
+	<version>${commons.math.version}</version>
+      </dependency>      
+      <dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-math3</artifactId>
+	<version>${commons.math3.version}</version>
+      </dependency>
+      <dependency>
 	<groupId>org.renci</groupId>
 	<artifactId>charts</artifactId>
 	<version>0.0.9</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.springframework</groupId>
+      	<artifactId>spring-beans</artifactId>
+      	<version>${spring.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.springframework</groupId>
+      	<artifactId>spring-context</artifactId>
+      	<version>${spring.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.springframework</groupId>
+      	<artifactId>spring-context-support</artifactId>
+      	<version>${spring.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.springframework</groupId>
+      	<artifactId>spring-core</artifactId>
+      	<version>${spring.version}</version>
       </dependency>      
       <dependency>
       	<groupId>org.postgresql</groupId>
@@ -282,6 +314,51 @@
 	<artifactId>jlrm-slurm-ssh</artifactId>
       	<version>${renci.jlrm.version}</version>
       </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-ws-rm</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-ws-security</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-ws-addr</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-ws-policy</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>org.apache.cxf</groupId>
+	<artifactId>cxf-rt-rs-client</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>org.apache.cxf</groupId>
+	<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-frontend-jaxws</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-transports-http</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.apache.cxf</groupId>
+      	<artifactId>cxf-rt-transports-http-jetty</artifactId>
+      	<version>${cxf.version}</version>
+      </dependency>      
     </dependencies>
   </dependencyManagement>
   <dependencies>
