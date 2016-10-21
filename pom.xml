@@ -2,7 +2,7 @@
   <parent>
     <groupId>edu.unc</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.9</version>
   </parent>
   <name>Massively Parallel Sequencing Parent</name>
   <modelVersion>4.0.0</modelVersion>
@@ -369,6 +369,15 @@
     </dependency>
   </dependencies>
   <build>
+    <pluginManagement>
+      <plugins>
+	<plugin>
+          <groupId>org.apache.karaf.tooling</groupId>
+          <artifactId>karaf-services-maven-plugin</artifactId>
+	  <version>${karaf.version}</version>
+	</plugin>
+      </plugins>
+    </pluginManagement>        
     <plugins>
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
@@ -381,7 +390,6 @@
       <plugin>
 	<groupId>org.apache.felix</groupId>
 	<artifactId>maven-bundle-plugin</artifactId>
-	<version>${maven.bundle.plugin.version}</version>
 	<extensions>true</extensions>
 	<inherited>true</inherited>
 	<configuration>
@@ -401,7 +409,6 @@
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-eclipse-plugin</artifactId>
-	<version>${maven.eclipse.plugin.version}</version>
 	<configuration>
 	  <skip>false</skip>
 	</configuration>
@@ -409,13 +416,11 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>${maven.site.plugin.version}</version>
         <configuration>
 	  <reportPlugins>
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-project-info-reports-plugin</artifactId>
-	      <version>${maven.project.info.reports.plugin.version}</version>
 	      <configuration>
 		<dependencyDetailsEnabled>true</dependencyDetailsEnabled>
 		<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
@@ -426,17 +431,14 @@
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-javadoc-plugin</artifactId>
-	      <version>${maven.javadoc.plugin.version}</version>
 	    </plugin>
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-surefire-report-plugin</artifactId>
-	      <version>${maven.surefire.report.plugin.version}</version>
 	    </plugin>
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-changelog-plugin</artifactId>
-	      <version>${maven.changelog.plugin.version}</version>
 	    </plugin>
 	  </reportPlugins>
         </configuration>
