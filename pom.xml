@@ -32,13 +32,13 @@
     <renci.jlrm.version>0.4.15</renci.jlrm.version>
     <slf4j.version>1.7.12</slf4j.version>
     <openjpa.version>2.4.1</openjpa.version>
-    <karaf.version>4.0.7</karaf.version>
+    <karaf.version>4.0.8</karaf.version>
     <cxf.version>3.1.7</cxf.version>
     <activemq.version>5.13.3</activemq.version>
     <jackson.version>2.6.6</jackson.version>
     <postgresql.version>9.4-1206-jdbc42</postgresql.version>
     <osgi.version>5.0.0</osgi.version>
-    <spring.version>4.2.3.RELEASE</spring.version>
+    <spring.version>4.2.5.RELEASE</spring.version>
   </properties>
   <licenses>
     <license>
