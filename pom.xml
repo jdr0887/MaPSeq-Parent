@@ -2,7 +2,7 @@
   <parent>
     <groupId>edu.unc</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.12</version>
+    <version>0.0.13</version>
   </parent>
   <name>Massively Parallel Sequencing Parent</name>
   <modelVersion>4.0.0</modelVersion>
@@ -12,6 +12,7 @@
   <packaging>pom</packaging>
   <url>https://github.com/jdr0887/MaPSeq-Parent</url>
   <properties>
+    <maven.site.plugin.skip>false</maven.site.plugin.skip>    
     <commons.discovery.version>0.5</commons.discovery.version>
     <commons.dbcp.version>1.4</commons.dbcp.version>
     <commons.beanutils.version>1.8.3</commons.beanutils.version>
@@ -379,6 +380,13 @@
       </plugins>
     </pluginManagement>        
     <plugins>
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-site-plugin</artifactId>
+	<configuration>
+          <skip>${maven.site.plugin.skip}</skip>
+	</configuration>
+      </plugin>      
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
