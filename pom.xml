@@ -386,7 +386,15 @@
 	<configuration>
           <skip>${maven.site.plugin.skip}</skip>
 	</configuration>
-      </plugin>      
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+	  <arguments>-Dmaven.javadoc.skip=true</arguments>
+          <preparationGoals>clean install</preparationGoals>
+        </configuration>
+      </plugin>            
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
